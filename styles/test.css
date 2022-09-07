@@ -33,6 +33,24 @@ body{
     color:white;
 
 }
+img{
+    width:50%;
+    max-width: 90%;
+    height: auto;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+}
+.text{
+    width:50%;
+    text-align: left;
+}
+.myimg{
+    text-align: center;
+}
 @media (max-width: 600px) {
     .nav-wrapper{
       flex-direction: column;
@@ -51,4 +69,18 @@ body{
         color:black;
 
     }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .text{
+        width: 100%;
+    }
+    img{
+        flex: 100%;
+        justify-content: center;
+    }
+    .myimg{
+        text-align: center;
+    }
 }
+
